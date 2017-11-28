@@ -1,8 +1,9 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
-const app = express();
 const schema = require('./domain/schema');
-const rootValue = require('./rootResolver');
+const rootValue = require('./app/fetchLogic');
+
+const app = express();
 
 app.use('/', graphqlHTTP({
   schema,

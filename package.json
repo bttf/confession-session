@@ -5,8 +5,8 @@
   "author": "bttf",
   "license": "MIT",
   "scripts": {
-    "start": "node app.js",
-    "watch": "nodemon -e js --exec \"yarn start\""
+    "start": "node src",
+    "watch": "nodemon --watch src -e js --exec \"yarn start\""
   },
   "dependencies": {
     "express": "^4.16.2",
