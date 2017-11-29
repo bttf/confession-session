@@ -3,6 +3,7 @@ const {
   GraphQLString,
 } = require('graphql');
 const ConfessionType = require('./Confession');
+const createConfession = require('../../resolvers/createConfession.js');
 
 module.exports = new GraphQLObjectType({
   name: 'Mutation',
@@ -12,6 +13,7 @@ module.exports = new GraphQLObjectType({
       args: {
         body: { type: GraphQLString },
       },
+      resolve: createConfession,
     },
   },
 });
