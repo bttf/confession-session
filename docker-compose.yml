@@ -9,6 +9,13 @@ services:
       - /app/node_modules
     depends_on:
       - db
+    environment:
+      PGHOST: db
+      PGUSER: postgres
+      PGDATABASE: postgres
+      PGPASSWORD: mysecretpassword
+      PGPORT: 5432
+
   db:
     image: postgres
     environment:

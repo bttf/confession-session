@@ -1,21 +1,9 @@
-const { Client } = require('pg');
+const { Pool } = require('pg');
 
-const client = new Client({
-  user: 'postgres',
-  host: 'db',
-  database: 'postgres',
-  password: 'mysecretpassword',
-  port: 5432,
-});
-
-client.connect();
-
-client.query('SELECT NOW()', (err, res) => {
-  console.log(err, res)
-});
+const pool = new Pool();
 
 module.exports = {
-  query(text, callback) {
-    return client.query(text, callback);
+  query(text) {
+    return pool.query(text);
   },
 };
