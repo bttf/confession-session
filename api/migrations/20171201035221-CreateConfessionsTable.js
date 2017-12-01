@@ -17,9 +17,9 @@ exports.setup = function(options, seedLink) {
 exports.up = function (db, callback) {
   db.createTable('confessions', {
     columns: {
-      id: { type: 'string', primaryKey: true, autoIncrement: true },
+      id: { type: 'int', primaryKey: true, autoIncrement: true },
       body: 'string',
-      created: 'datetime',
+      date_created: { type: 'datetime', defaultValue: new String('now()') },
     },
     ifNotExists: true,
   }, callback);

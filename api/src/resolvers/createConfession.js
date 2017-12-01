@@ -1,5 +1,14 @@
 const db = require('../db');
 
-module.exports = (_root, { body }) => {
-  db.query(``);
+module.exports = async (_root, { body }) => {
+  const response = await db.query(`
+    INSERT INTO "confessions" (body)
+    VALUES ('${body}')
+    RETURNING "id"
+  `);
+
+  return {
+    id: response.rows[0].id,
+    body,
+  };
 };
