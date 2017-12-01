@@ -3,9 +3,14 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const PORT = process.env.PORT || 8080;
 
 module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
+  devServer: {
+    host: '0.0.0.0',
+    port: PORT,
+  },
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
@@ -13,10 +18,10 @@ module.exports = {
   module: {
     rules: [{
       test: /\.s?css$/,
-			use: ExtractTextPlugin.extract({
-				fallback: 'style-loader',
-				use: ['css-loader', 'sass-loader']
-			})
+      use: ExtractTextPlugin.extract({
+        fallback: 'style-loader',
+        use: ['css-loader', 'sass-loader']
+      })
     }],
   },
   plugins: [

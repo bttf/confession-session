@@ -1,0 +1,11 @@
+html {
+  // is there something for webpack that can change this URL host according to
+  // build environment?
+  background: url(http://localhost:3001/van-gogh) no-repeat center center fixed;
+  background-size: cover;
+}
+
+html,
+body {
+  font-size: 100%;
+}

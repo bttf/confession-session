@@ -1,5 +1,14 @@
 version: '3'
 services:
+  frontend:
+    build: frontend
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      PORT: 8080
   louvre:
     build: louvre
     ports:
@@ -25,7 +34,6 @@ services:
       PGDATABASE: postgres
       PGPASSWORD:
       PGPORT: 5432
-
   db:
     image: postgres
     environment:
