@@ -5,11 +5,14 @@
   "author": "bttf",
   "license": "MIT",
   "scripts": {
-    "debug": "node --inspect src",
+    "migrate": "db-migrate up --config config/database.json",
+    "debug": "yarn migrate && node --inspect src",
     "start": "node src",
     "watch": "nodemon --watch src -e js --exec \"yarn debug\""
   },
   "dependencies": {
+    "db-migrate": "^0.10.1",
+    "db-migrate-pg": "^0.2.5",
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
     "graphql": "^0.11.7",
