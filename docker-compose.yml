@@ -1,5 +1,14 @@
 version: '3'
 services:
+  louvre:
+    build: louvre
+    ports:
+      - '3001:3001'
+    volumes:
+      - ./louvre:/app
+      - /app/node_modules
+    environment:
+      PORT: 3001
   api:
     build: api
     ports:
@@ -10,6 +19,7 @@ services:
     depends_on:
       - db
     environment:
+      PORT: 3000
       PGHOST: db
       PGUSER: postgres
       PGDATABASE: postgres

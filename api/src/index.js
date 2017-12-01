@@ -1,15 +1,16 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const schema = require('./schema');
+const db = require('./db');
+const PORT = process.env.PORT || 3000;
 
 const app = express();
-const db = require('./db');
 
 app.use('/', graphqlHTTP({
   schema,
   graphiql: true,
 }));
 
-app.listen(3000);
+app.listen(PORT);
 
-console.log('listening on 3000');
+console.log(`listening on ${PORT}`);
