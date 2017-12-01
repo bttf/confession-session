@@ -12,15 +12,11 @@ const ConfessionType = new GraphQLObjectType({
       type: GraphQLID,
       description: 'Unique, numeric id',
     },
-    hash: {
-      type: GraphQLString,
-      description: 'Cryptographically-secure hash of IP address',
-    },
     body: {
       type: GraphQLString,
       description: 'Text of confession',
     },
-    created: {
+    date_created: {
       type: GraphQLString,
       description: 'Date and time when created',
     },
