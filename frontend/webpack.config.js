@@ -17,6 +17,9 @@ module.exports = {
   },
   module: {
     rules: [{
+      test: /\.jsx?$/,
+      use: ['babel-loader'],
+    }, {
       test: /\.s?css$/,
       use: ExtractTextPlugin.extract({
         fallback: 'style-loader',
