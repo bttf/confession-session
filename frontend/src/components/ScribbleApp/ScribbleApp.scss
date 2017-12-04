@@ -4,14 +4,15 @@
   .header {
     background-color: $transparent-black;
     color: $white;
-    font-family: 'Roboto', Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 100;
+    margin-bottom: 1rem;
     padding: .75rem;
     width: 100%;
 
     .subtitle {
       font-size: .75rem;
+      font-style: italic;
       letter-spacing: 1px;
     }
   }
