@@ -19,6 +19,6 @@ export default class LeftPane extends React.Component {
     return (
       <div className="left-pane">
       </div>
-    ):
+    );
   }
 }
