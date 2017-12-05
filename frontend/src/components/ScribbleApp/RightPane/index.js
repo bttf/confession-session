@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from '../Section';
+import './index.scss';
 
 export default class RightPane extends React.Component {
   state = {

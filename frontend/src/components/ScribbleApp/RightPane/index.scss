@@ -1,2 +1,18 @@
-.left-pane {
+@import '../../../assets/scss/colors';
+
+.right-pane {
+  font-size: 1rem;
+  .confession {
+    margin-bottom: 1rem;
+
+    .id {
+      color: $red;
+      cursor: pointer;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }

@@ -1,2 +1,23 @@
+@import '../../../assets/scss/colors';
+
 .left-pane {
+  .confession-input {
+    background-color: $transparent-white;
+    border: 0;
+    box-sizing: border-box;
+    color: $white;
+    font-size: 1.5rem;
+    min-height: 8rem;
+    padding: .5rem;
+    width: 100%;
+  }
+
+  .submit-button {
+    background: $purple-gradient;
+    border: 0;
+    color: $white;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    width: 100%;
+  }
 }

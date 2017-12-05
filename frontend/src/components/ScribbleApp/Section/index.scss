@@ -3,14 +3,14 @@
 .section-container {
   background-color: $transparent-black;
   color: $white;
-  font-size: 1.75rem;
-  font-weight: 100;
   margin-bottom: 1rem;
   padding: .75rem;
 
   .section-header {
     align-items: center;
     display: flex;
+    font-size: 1.75rem;
+    font-weight: 100;
 
     .section-title {
       cursor: pointer;
@@ -19,7 +19,7 @@
 
   .section-collapse-button {
     align-items: center;
-    background: linear-gradient(rgb(53, 39, 181), rgb(131, 0, 153));
+    background: $purple-gradient;
     border-radius: 1rem;
     cursor: pointer;
     display: flex;

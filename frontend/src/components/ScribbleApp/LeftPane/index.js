@@ -10,9 +10,10 @@ import './index.scss';
 export default class LeftPane extends React.Component {
   render() {
     return (
-      <div>
-        <Section title="Confess" collapsed={true}>
-          <textarea></textarea>
+      <div className="left-pane">
+        <Section title="Confess" collapsed={false}>
+          <textarea className="confession-input"></textarea>
+          <button className="submit-button">Submit</button>
         </Section>
         <Section title="About" collapsed={true}>
         </Section>

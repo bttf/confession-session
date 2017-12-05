@@ -16,6 +16,10 @@ export default class ScribbleApp extends React.Component {
 
         <LeftPane />
         <RightPane />
+
+        <div className="copyright-info">
+          Copyright 2017 Scribble.today
+        </div>
       </div>
     );
   }
