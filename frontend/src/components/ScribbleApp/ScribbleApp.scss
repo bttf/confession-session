@@ -28,6 +28,11 @@
 
 @media(min-width: 600px) {
   .scribble-app-container {
+    .header-inner-container {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
     .pane-container {
       display: flex;
       margin: 0 auto;

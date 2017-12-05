@@ -8,9 +8,11 @@ export default class ScribbleApp extends React.Component {
     return (
       <div className="scribble-app-container">
         <div className="header">
-          Scribble.today
-          <div className="subtitle">
-            A place to confess, anonymously.
+          <div className="header-inner-container">
+            Scribble.today
+            <div className="subtitle">
+              A place to confess, anonymously.
+            </div>
           </div>
         </div>
 
