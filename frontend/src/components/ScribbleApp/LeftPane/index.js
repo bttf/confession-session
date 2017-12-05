@@ -11,11 +11,12 @@ export default class LeftPane extends React.Component {
   render() {
     return (
       <div className="left-pane">
-        <Section title="Confess" collapsed={false}>
+        <Section title="Confess" collapsed={true}>
           <textarea className="confession-input"></textarea>
           <button className="submit-button">Submit</button>
         </Section>
         <Section title="About" collapsed={true}>
+          <strong>Scribble.today</strong> is an anonymous confession platform. Much inspired by the long-gone <strong>grouphug.us</strong>, we aim to provide a safe, anonymous space to admit your thoughts, worries, or confessions so that others may read them, and that you may gain some respite.
         </Section>
       </div>
     );
