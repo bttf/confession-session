@@ -11,6 +11,10 @@
   .section-header {
     align-items: center;
     display: flex;
+
+    .section-title {
+      cursor: pointer;
+    }
   }
 
   .section-collapse-button {
@@ -29,6 +33,12 @@
   &.collapsed {
     .section-content {
       display: none;
+    }
+  }
+
+  &.expanded {
+    .section-header {
+      margin-bottom: .5rem;
     }
   }
 }

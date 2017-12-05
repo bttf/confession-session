@@ -3,6 +3,7 @@
 .scribble-app-container {
   .header {
     background-color: $transparent-black;
+    box-sizing: border-box;
     color: $white;
     font-size: 2.5rem;
     font-weight: 100;

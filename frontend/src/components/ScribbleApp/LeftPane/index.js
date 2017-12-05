@@ -12,10 +12,9 @@ export default class LeftPane extends React.Component {
     return (
       <div>
         <Section title="Confess" collapsed={true}>
-          <textarea id="" name="" cols="30" rows="10"></textarea>
+          <textarea></textarea>
         </Section>
         <Section title="About" collapsed={true}>
-          <textarea id="" name="" cols="30" rows="10"></textarea>
         </Section>
       </div>
     );
