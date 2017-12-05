@@ -1,8 +1,7 @@
-@import '../../../assets/scss/colors';
+@import '../../assets/colors';
 
 .right-pane {
   font-size: 1rem;
-  padding-left: 1rem;
 
   .confession {
     margin-bottom: 1rem;
@@ -22,5 +21,6 @@
 @media(min-width: 600px) {
   .right-pane {
     flex: 1;
+    padding-left: 1rem;
   }
 }

@@ -32,7 +32,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       filename: 'index.html',
-      template: path.resolve(__dirname, 'src/index.html'),
+      template: path.resolve(__dirname, 'src/assets/index.html'),
     }),
     new CopyWebpackPlugin([
       { context: path.resolve(__dirname, 'src'), from: '*.html' },

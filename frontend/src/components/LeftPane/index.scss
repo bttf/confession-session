@@ -1,8 +1,6 @@
-@import '../../../assets/scss/colors';
+@import '../../assets/colors';
 
 .left-pane {
-  padding-right: 1rem;
-
   .confession-input {
     background-color: $transparent-white;
     border: 0;
@@ -28,5 +26,6 @@
 @media(min-width: 600px) {
   .left-pane {
     flex: 1;
+    padding-right: 1rem;
   }
 }
