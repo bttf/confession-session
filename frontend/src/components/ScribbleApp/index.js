@@ -6,7 +6,7 @@ import './ScribbleApp.scss';
 export default class ScribbleApp extends React.Component {
   render() {
     return (
-      <div className='scribble-app-container'>
+      <div className="scribble-app-container">
         <div className="header">
           Scribble.today
           <div className="subtitle">
@@ -14,8 +14,10 @@ export default class ScribbleApp extends React.Component {
           </div>
         </div>
 
-        <LeftPane />
-        <RightPane />
+        <div className="pane-container">
+          <LeftPane />
+          <RightPane />
+        </div>
 
         <div className="copyright-info">
           Copyright 2017 Scribble.today

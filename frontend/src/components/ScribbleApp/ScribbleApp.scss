@@ -25,3 +25,13 @@
     text-align: center;
   }
 }
+
+@media(min-width: 600px) {
+  .scribble-app-container {
+    .pane-container {
+      display: flex;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+  }
+}

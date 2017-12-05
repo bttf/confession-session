@@ -42,3 +42,28 @@
     }
   }
 }
+
+@media(min-width: 600px) {
+  .section-container {
+    flex: 1;
+
+    .section-collapse-button {
+      display: none;
+    }
+
+    &.collapsed,
+    &.expanded {
+      .section-content {
+        display: block;
+      }
+
+      .section-header {
+        margin-bottom: .5rem;
+
+        .section-title {
+          cursor: default;
+        }
+      }
+    }
+  }
+}
