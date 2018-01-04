@@ -1,3 +1,3 @@
-# Scribble Today
+# confession-session
 
 `docker-compose up`
